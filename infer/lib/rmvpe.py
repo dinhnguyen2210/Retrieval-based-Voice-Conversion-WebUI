@@ -171,7 +171,8 @@ class BiGRU(nn.Module):
         )
 
     def forward(self, x):
-        return self.gru(x)[0]
+        with torch.backends.cudnn.flags(enabled=False):
+            return self.gru(x.contiguous())[0]
 
 
 class ConvBlockRes(nn.Module):
