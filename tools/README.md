@@ -97,6 +97,12 @@ Helper scripts for training voice models and converting audio. All scripts are r
 | `rvc_config.ps1` | Inputs & outputs. **Edit this** before running. |
 | `rvc_pipeline.ps1` | Train + convert pipeline. Don't modify. |
 
+### Standalone scripts (alternative — embedded config)
+| File | Purpose |
+|---|---|
+| `train_pipeline.ps1` | Same as `rvc_pipeline.ps1 -Mode train` but with config at top of script (no external file). |
+| `convert_pipeline.ps1` | Same as `rvc_pipeline.ps1 -Mode convert` but with config at top of script (no external file). |
+
 ### Original RVC tools
 | File | Purpose |
 |---|---|
